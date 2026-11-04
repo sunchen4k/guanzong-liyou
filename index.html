@@ -80,7 +80,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 .section-head .sub{font-size:12px;color:var(--ink-3);margin-top:2px}
 .section-head .spacer{flex:1}
 /* grid & card */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,500px),1fr));gap:18px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px 18px 16px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s,opacity .2s;position:relative;overflow:hidden}
 .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--cat,#c9b99a);opacity:.9}
 .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
@@ -112,7 +112,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 .reveal{position:absolute;inset:0;display:none;align-items:center;justify-content:center;border-radius:11px;background:var(--surface-2);font-size:13px;font-weight:600;color:var(--ink-2);letter-spacing:1px}
 .para.blurred .reveal{display:flex}
 /* flashcard */
-.flash-wrap{max-width:720px;margin:0 auto;padding:10px 0 40px}
+.flash-wrap{max-width:960px;margin:0 auto;padding:10px 0 40px}
 .flash-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
 .flash-controls .pos{font-size:13px;color:var(--ink-3);font-variant-numeric:tabular-nums}
 .flash{perspective:1400px;cursor:pointer}
@@ -131,7 +131,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 .btn.ghost-green{color:var(--green);border-color:var(--green-soft);background:var(--green-soft)}
 .btn.ghost-green:hover{border-color:var(--green)}
 /* quiz */
-.quiz-wrap{max-width:720px;margin:0 auto;padding:10px 0 40px}
+.quiz-wrap{max-width:960px;margin:0 auto;padding:10px 0 40px}
 .quiz-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow-lg);padding:30px 30px 26px}
 .quiz-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;gap:10px}
 .quiz-word{font-family:var(--serif);font-size:26px;font-weight:700;letter-spacing:2px}
